@@ -2613,6 +2613,30 @@ input, select, textarea {
 				width: 100%;
 			}
 
+.tech-logos {
+	display: flex;
+	flex-wrap: wrap;  /* Prevents wrapping, ensuring all items are in one line */
+	overflow-x: auto;  /* Enables horizontal scrolling if viewport is too small */
+	gap: 10px;  /* Space between images */
+	padding: 10px 0;  /* Padding around the images */
+  }
+  
+  .tech-logo {
+	height: 150px;  /* Fixed height for all logos */
+	width: auto;  /* Width is adjusted automatically to maintain aspect ratio */
+  }
+
+
+#game-engine {
+	text-align: center;
+}
+
+  #game-engine + .logo-container {
+	display: flex;
+	justify-content: center; /* Horizontally centers the logo */
+  }
+  
+
 /* List */
 
 	ol {
@@ -3374,7 +3398,6 @@ input, select, textarea {
 		cursor: default;
 		padding: 1.75em 2em;
 	}
-
 		#header > .title {
 			border: 0;
 			color: #ffffff;
